@@ -2,17 +2,6 @@ import os from "node:os";
 
 const cpus = os.cpus();
 const cores = cpus.length;
-// // console.log(cores, "current cores");
-// const totalMemory = (os.totalmem() / (1024 * 1024 * 1024)).toFixed(2);
-// // console.log(totalMemory, "GB total memory");
-// const freeMemory = (os.freemem() / (1024 * 1024)).toFixed(2);
-// // console.log(freeMemory, "MB free memory");
-// const upTime = parseInt(os.uptime() / (60 * 60));
-// // console.log(upTime, "hours up time");
-// const platform = os.platform();
-// // console.log(platform, "platform");
-// const arch = os.arch();
-// // console.log(arch, "architecture");
 const systemInfo = {
   cores: cpus.length,
   totalMemory: (os.totalmem() / (1024 * 1024 * 1024)).toFixed(2),
